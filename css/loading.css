@@ -1,0 +1,28 @@
+
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.loading-text {
+    font-size: 50px;
+    color: white;
+    opacity: 1;
+}
+
+.bg {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    background-image: url("images/dandelions.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(50px);
+    filter: blur(50px);
+}
