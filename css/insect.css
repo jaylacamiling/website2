@@ -95,6 +95,7 @@ h1 {
 }
 
 .message {
+    opacity: 0;
     line-height: 1.7;
     background-color: rgba(0,0,0,0.5);
     width: 100%;
@@ -105,13 +106,12 @@ h1 {
     top: 0;
     left: 50%;
     transform: translate(-50%, -150%);
-    opacity: 0;
     transition: transform 1s ease-in;
 }
 
 .message.visble {
-    transform: translate(-50%, 150%);
     opacity: 1;
+    transform: translate(-50%, 150%);
 }
 
 .insect {
