@@ -45,13 +45,30 @@ body {
     text-decoration: none;
 }
 
+.nav.active {
+    background-color: white;
+}
+
+.nav.active a {
+    color: black;
+}
+
+.nav.active .container {
+    padding: 10px 0;
+}
+
+.nav a.current, .nav a:hover {
+    color: #c0392b;
+    font-weight: bold;
+}
 
 .hero {
-    background-image: url('/images/ai.jpg');
+    position: relative;
+    background-image: url("images/ai.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
-    height: 100vh:
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,12 +87,13 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgb(0,0,0,0.5);
+    z-index: -1;
 }
 
 .hero h1 {
     font-size: 46px;
     margin: -20px 0 20px;
-    z-inex: 100;
+    z-index: 100;
 }
 
 .hero p {
