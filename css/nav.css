@@ -58,7 +58,7 @@ body {
 }
 
 .nav a.current, .nav a:hover {
-    color: #c0392b;
+    color: darkred;
     font-weight: bold;
 }
 
