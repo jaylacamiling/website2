@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: blue;
+}
+
+.sun {
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.square {
+    height: 250px;
+    width: 250px;
+    background-color: red;
+    border-radius: 5%;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.door {
+    height: 75px;
+    width: 55px;
+    background-color: black;
+    border radius: 5%;
+    position: absolute;
+    bottom: 30px;
+    left: 120px;
+    z-index: 1;
+}
+
+.knob {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 60px;
+    left: 160px;
+    z-index: 2;
+}
