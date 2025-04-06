@@ -11,7 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
-    background-color: blue;
+    background-color: skyblue;
 }
 
 .sun {
@@ -27,7 +27,7 @@ body {
 .square {
     height: 250px;
     width: 250px;
-    background-color: red;
+    background-color: lightslategrey;
     border-radius: 5%;
     position: absolute;
     bottom: 30px;
@@ -54,4 +54,47 @@ body {
     bottom: 60px;
     left: 160px;
     z-index: 2;
+}
+
+.roof {
+    height: 200px;
+    width: 275px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 70px solid gainsboro;
+    position: absolute;
+    bottom: 255px;
+    left: 17px;
+}
+
+.window {
+        height: 45px;
+        width: 45px;
+        border: 2px solid white;
+        background-color: black;
+        border-radius: 5%;
+        position: absolute;
+        bottom: 185px;
+        left: 202px;
+        z-index: 1;
+}
+
+.window_2 {
+    height: 45px;
+    width: 45px;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 5%;
+    position: absolute;
+    bottom: 185px;
+    left: 60px;
+    z-index: 1;
+}
+.grass {
+    width: 100%;
+    height: 50px;
+    background-color: green;
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
 }
