@@ -76,7 +76,7 @@ function increaseScore() {
     score = score + 1
     if (score == 10) {
         message.classList.add('visible')
-    }
+    }j
     scoreEL.innerHTML = `Score: ${score}`
 }
 
