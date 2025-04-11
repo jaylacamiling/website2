@@ -1,6 +1,7 @@
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
 const ball = document.createElement('div')
+const scoreEL = document.getElementById('score')
 document.body.appendChild(ball)
 const LPaddle = document.createElement('div')
 document.body.appendChild(LPaddle)
@@ -48,6 +49,11 @@ function moveBall(){
         (ballXDirection == -1)
     ){
         ballXDirection = ballXDirection * -1
+    }
+
+    if (ballXPosition - ballRadius <= 0) {
+        document.getElementById("message").textContent = "Game Over!";
+        return;
     }
 
 }
@@ -131,3 +137,29 @@ document.addEventListener('keyup', (event) => {
     }
     LPaddle.style.top = `${LPaddleYPosition}px`
  })
+
+ function checkCollision(ball, paddle) {
+    // Simple AABB collision detection
+    if (
+      ball.y + ball.radius >= paddle.y &&
+      ball.y - ball.radius <= paddle.y + paddle.height &&
+      ball.x + ball.radius >= paddle.x &&
+      ball.x - ball.radius <= paddle.x + paddle.width
+    ) {
+      return true;
+    }
+    return false;
+  }
+
+  function checkCollision(ball, paddle) {
+    // Simple AABB collision detection
+    if (
+      ball.y + ball.radius >= paddle.y &&
+      ball.y - ball.radius <= paddle.y + paddle.height &&
+      ball.x + ball.radius >= paddle.x &&
+      ball.x - ball.radius <= paddle.x + paddle.width
+    ) {
+      return true;
+    }
+    return false;
+  }
