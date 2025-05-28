@@ -99,7 +99,7 @@ toggleBtn.addEventListener('click', () => {
 })
 
 //Close Box
-closeBtn.addEventListener('click'. () => {
+closeBtn.addEventListener('click', () => {
     document.getElementById('text-box').classList.remove('show')
 })
 
